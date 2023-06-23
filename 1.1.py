@@ -15,5 +15,8 @@ if len(hex_input) % 2 != 0:
 hex_bytes = bytes.fromhex(hex_input)
 # print(hex_bytes)
 
-b64 = b64encode(hex_bytes).decode()
-print("Output in base64: ", b64)
+# Base64 conversion
+b64 = b64encode(hex_bytes)
+
+# Pretty printing:
+print("Output in base64:", b64.decode())
